@@ -1,0 +1,74 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D8C8B1;
+    color: white;
+    height: 60px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.menu-items{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo{
+    font-family: Roboto, cursive;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.nav-menu img{
+    width: 20px;
+    
+}
+
+.home{
+    color: orange;
+}
+
+body{
+    height: 10000px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 600px){
+    .navbar{
+        background-color: black;
+        color: white;
+    }
+    .nav-menu{
+        display: initial;
+        color: #707070;
+    }
+
+    .menu-items{
+        display: none;
+    }
+}
+
