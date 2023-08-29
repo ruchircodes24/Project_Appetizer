@@ -2,11 +2,13 @@ body{
     height: fit-content;
     margin: 0px;
 }
-.about-section, .services-section, .menu-section, .reservation-section, .staff-section, .customer-review-section{
+
+.welcome, .about-section, .services-section, .menu-section, .reservation-section, .staff-section, .customer-review-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .welcome{
@@ -14,19 +16,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .welcome img{
-    width: 100vw;
-    height: 55vw;    
+    max-width: 100%;    
 }
 
 .welcome button{
     width: max-content;
     padding: 20px 30px;
-    font-size: 1.8vw;
+    font-size: 1em;
     cursor: pointer;
     border-radius: 2px;
+}
+
+.order-buttons{
+    display: flex;
+    margin-top: -210px;
 }
 
 .order-now{  
@@ -54,65 +61,76 @@ body{
     color: orange;
     transition: 0.5s;
 }
+
 .subheading{
     font-family: Miss Fajardose, cursive;
-    font-size: 80px;
+    font-size: 5em;
     color: orange;
     font-weight: 500;
     margin-bottom: -25px;
 }
+
 h2{
    margin-top: -35px;
    font-family: inherit;
-   font-size: 50px;
+   font-size: 3em;
    color: rgb(57, 55, 55);
    font-weight: 900;
 }
 
+.about-section{
+    margin-top: 200px;
+}
+
 .about-content{
-    width: 800px;
-    font-size: 18px;
+    width: 100vw;
+    font-size: 1.1em;
     line-height: 30px;
     text-align: center;
     font-weight: 400;
 }
 
-.about-stats{
-    position: relative;
+.stats-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vw;
 }
 
-.about-stats img{
+.stats-section img{
     width: 100%;
-    height: 600px;
-    margin-top: 60px;
+    z-index: 0;
 }
 
 .play-button{
     background-color: orange;
     border: none;
-    padding: 30px;
     border-radius: 50%;
-    position: absolute;
-    top:20px;
-    left: 600px;
     cursor: pointer;
+    width: 6.5vw;
+    padding: 29px;
+    margin-bottom: -42px;
+    margin-left: 50%;
+    z-index: 1;
 }
 
 .play-button img{
-    height: 15px;
+    width: 2vw;
     margin: 0px;
 }
+
 .stat-count{
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    right: 100px;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
+    align-items: center;
+    flex-shrink: 300px;
+    margin: 0px 10px;
+    margin-top: -50vw;
+    color: #D8C8B1;
 }
 
 .numbers{
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -124,16 +142,16 @@ h2{
 }
 
 .text{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .services-section{
-    margin-top: 50px;
+    margin-top: 45vw;
 }
 
 .services-content{
     display: flex;
-    gap: 130px;
+    padding: 0vw 3vw;
 }
 
 .birthday, .weddings, .meetings{
@@ -142,23 +160,22 @@ h2{
     align-items: center;
     justify-content: center;
     vertical-align: top;
-    margin: 10px 40px;
 }
 
 .birthday-icon, .meeting-icon, .weddings-icon{
-    height: 150px;
-    width: 150px;
+    height: 20vw;
+    width: 20vw;
     border-radius: 50%;
     background-color: black;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 4vw;
 }
 
 .birthday img, .meetings img, .weddings img{
-    height: 60px;
+    height: 8vw;
     margin: 0px;
 }
 
@@ -240,31 +257,37 @@ h2{
 .reservation-form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap:25px;
+    column-gap:2vw;
     border: 1px;
-    padding: 20px;
+    padding: 3vw 2vw ;
     box-shadow: 0px 0px 10px grey;
     margin-bottom: 30px;
 }
 
 .reservation-section p{
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 500;
 }
 
 .reservation-section input, 
 .reservation-section select, 
 .reservation-form option{
-    padding: 10px 2px;
-    font-size: 16px;   
+    padding: 1.4vw 1.4vw;
+    font-size: 1em;   
+}
+
+.reservation-section input:focus, 
+.reservation-section select:focus, 
+.reservation-form option:focus{
+    outline: orange;
 }
 
 .reservation-form button{
-    padding: 20px 20px;
+    padding: 1.5vw 2vw;
     background-color: orange;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -317,12 +340,11 @@ h2{
 
 .reviews{
     display: flex;
-    column-gap: 20px;
-    padding: 0px 30px;
+    gap: 1vw;
 }
 
 .reviewer{
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 1000;
     letter-spacing: 3px;
     color: rgb(50, 50, 50);
@@ -343,7 +365,7 @@ h2{
     margin-bottom: 4px;
 }
 .reviews .profile-picture{
-    height: 150px;
+    height: 13vw;
     border-radius: 50%;
     position: relative;
 }
@@ -383,15 +405,15 @@ h2{
 }
 
 .ig-posts .post{
-    height: 300px;
+    height: 30vw;
     width: 100%;
     position: relative;
     cursor: pointer;
 }
 
 .ig-icon{
-    height: 50px;
-    width: 50px;
+    height: 5vw;
+    width: 4vw;
     position: absolute;
     top: 40%;
     left: 40%;
@@ -409,26 +431,30 @@ h2{
     transition: 0.3s;
 }
 
+.master-chefs, .reviews, .meal-type, .services-content{
+    padding: 0vw 3vw;
+}
+
 .footer-section{
     background-color: rgb(26, 25, 25);
     color: rgb(184, 184, 184);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 1vw;
     height: 100%;
-    padding: 40px 50px;
+    padding: 1vw 1.5vw;
     line-height: 30px;
 }
 
 .footer-section h3{
     font-weight: 900;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 2vw;
 }
 
 .footer-ig img{
-    height: 100px;
-    width: 100px;
+    height: 8vw;
+    width: 9vw;
 }
 
 .footer-ig{
@@ -439,7 +465,7 @@ h2{
 
 .footer-timings{
     display: flex;
-    gap: 70px;
+    gap: 5vw;
 }
 
 .footer-timings .day, .footer-timings .time{
@@ -449,7 +475,7 @@ h2{
 
 .footer-newsletter input, .subscribe-button{
     text-align: center;
-    padding: 20px 20px;
+    padding: 1.5vw;
     background-color: rgb(36, 36, 36);
     color: lightgrey;
     font-weight: 500;
@@ -469,26 +495,25 @@ h2{
 .subscribe-button{
     background-color: orange;
     color: white;
-    width: 202px;
+    width: 15.7vw;
     cursor: pointer;
 }
 
 .icon{
     background-color: rgb(36, 36, 36);
-    padding: 13px 15px;
+    padding: 1.2vw;
     padding-bottom: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
 .footer-icons{
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     align-items: center;
 }
 .footer-icons img{
-    height: 18px;
+    height: 1.5vw;
 }
-
 .copyright-text{
     text-align: center;
     background-color: rgb(26, 25, 25);
@@ -498,5 +523,231 @@ h2{
     padding-bottom: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+@media (max-width: 725px){
+    .navbar{
+        background-color: black;
+        color: white;
+        font-size: 3vw;
+    }
+    .nav-menu{
+        display: initial;
+        color: #707070;
+        margin-right: 5vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+    }
+
+    .nav-menu img{
+        height: 3.2vw;
+        width: 3vw;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .navbar .logo{
+        font-size: 5vw;
+    }
+
+    .subheading{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+     }
+
+    .welcome{
+       max-width: 100%
+    }
+
+    .play-button{
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .play-button img{
+        width: 4vw;
+        margin: 0px;
+    }
+
+    .stat-count{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .stat-count .numbers{
+        font-size: 1.5rem;
+    }
+
+    .stat-count .text{
+        font-size: 0.7rem;
+    }
+
+    .services-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .birthday-icon, .meeting-icon, .weddings-icon{
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        background-color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vw;
+    }
+
+    .meal-type{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px;
+        padding: 5vw 10vw ;
+    }
+    
+    .reservation-section p{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .reservation-section input, 
+    .reservation-section select, 
+    .reservation-form option{
+        padding: 1.5vw 2.5vw;
+        font-size: 1em;   
+    }
+
+    .reservation-form button{
+        padding: 2vw 4vw;
+        background-color: orange;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        margin-top: 5vw;
+        cursor: pointer;
+    }
+
+    .master-chefs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .chef-social{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5vh;
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reviewer{
+        font-size: 1rem;
+        font-weight: 1000;
+        letter-spacing: 3px;
+        color: rgb(50, 50, 50);
+    }
+    
+    .reviews div{
+        text-align: center;
+        margin-top: 10px;
+        font-family: Poppins;
+        font-weight:600;
+        color: grey;
+        line-height: 35px;
+    }
+    
+    .reviews div h3{
+        color: black;
+        font-weight: 1000;
+        margin-bottom: 4px;
+    }
+
+    .reviews .profile-picture{
+        height: 25vw;
+        border-radius: 50%;
+        position: relative;
+    }
+    
+    .customer-profile{
+        position: relative;
+    }
+    
+    .quote{
+        height: 10vw;
+        width: 12vw;
+        margin: -5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quotes-icon{
+        height: 4vw;
+        margin-top: -2vw;
+    }
+
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3vw;
+    }
+
+    .footer-section h3{
+        margin-bottom: -1vw;
+    }
+    
+    .footer-ig img{
+        height: 22vw;
+        width: 99%;
+    }
+    
+    .footer-ig{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        cursor: pointer;
+    }
+
+    .footer-social h3{
+        margin-bottom: 3vw;
+    }
+    
+    .footer-timings{
+        display: flex;
+        gap: 5vw;
+    }
+    
+    .footer-timings .day, .footer-timings .time{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-newsletter input, .subscribe-button{
+        padding: 5vw 10vw;
+    }
+    
+    .subscribe-button{
+        background-color: orange;
+        color: white;
+        width: 64.5vw;
+        cursor: pointer;
+    }  
 }
 

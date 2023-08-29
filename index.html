@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar navbar-js">
         <div class="logo">Appetizer</div>
         <div class="menu-items">
-            <span class="home">Home</span>
-            <span>About</span>
-            <span>Menu</span>
-            <span>Blog</span>
-            <span>Contact</span>
-            <button>Book a table</button>
+            <span class="home home-js">Home</span>
+            <span class="about-js"><a href=".about-section">About</a></span>
+            <span class="menu-js">Menu</span>
+            <span class="blog-js">Blog</span>
+            <span class="contact-js">Contact</span>
+            <button class="book-table-js">Book a table</button>
         </div>
         <div class="nav-menu">
             <img src="images/more.png">
-            <span>Menu</span>
+            <span>MENU</span>
         </div>
     </div>
     <div class="welcome">
@@ -38,26 +38,30 @@
         <h2>Appetizer Restaurant</h2>
         <div class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veritatis assumenda optio omnis nulla deserunt eius? Suscipit voluptatem error ullam doloribus optio quos deserunt quas. Reiciendis natus ex omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus cupiditate ipsum, voluptatum nihil, iusto sed vitae eum iste odit quam! Sit ea, neque molestias expedita laudantium numquam officiis fuga!</div>
     </div>
-    <div class="about-stats">
-        <button class="play-button"><img src="icons/play-button-arrowhead.png"></button>
+    <div class="stats-section">
+        <button class="play-button">
+            <a href="https://www.youtube.com/watch?v=WdWEMXnHBVI" target="_blank">
+            <img src="icons/play-button-arrowhead.png">
+        </a>
+        </button>
         <img src="images/home4.jpg">
         <div class="stat-count"> 
-           <div class="stats">
-                <span class="numbers">18</span>
-                <span class="text">Years of experience</span>
-           </div>
-           <div class="stats">
-                <span class="numbers">15,000</span>
-                <span class="text">Happy Customers</span>
-           </div>
-           <div class="stats">
-                <span class="numbers">100</span>
-                <span class="text">Menu</span>
-           </div>
-           <div class="stats">
-                <span class="numbers">20</span>
-                <span class="text">Staffs</span>
-           </div>
+            <div class="stats">
+                    <span class="numbers">18</span>
+                    <span class="text">Years of experience</span>
+            </div>
+            <div class="stats">
+                    <span class="numbers">15,000</span>
+                    <span class="text">Happy Customers</span>
+            </div>
+            <div class="stats">
+                    <span class="numbers">100</span>
+                    <span class="text">Menu</span>
+            </div>
+            <div class="stats">
+                    <span class="numbers">20</span>
+                    <span class="text">Staffs</span>
+            </div>
         </div>
     </div>
     <div class="services-section">
@@ -569,5 +573,8 @@
         </div>
     </div>
     <p class="copyright-text">Copyright ©2023 All rights reserved. </p>
+
+    <script src="js/home.js">
+    </script>
 </body>
 </html>
