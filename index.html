@@ -12,28 +12,40 @@
 </head>
 <body>
     <div class="navbar navbar-js">
-        <div class="logo">Appetizer</div>
-        <div class="menu-items">
+        <div class="logo logo-js">Appetizer</div>
+        <div class="menu-items menuItems-js">
             <span class="home home-js">Home</span>
-            <span class="about-js"><a href=".about-section">About</a></span>
+            <span class="about-js">About</span>
             <span class="menu-js">Menu</span>
-            <span class="blog-js">Blog</span>
             <span class="contact-js">Contact</span>
-            <button class="book-table-js">Book a table</button>
+            <button class="makeReservation-js">Book a table</button>
         </div>
         <div class="nav-menu">
-            <img src="images/more.png">
+            <button type="button" class="collapsible">
+                <img src="images/more.png">
             <span>MENU</span>
+            </button>
+            <div class="content">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <button class="makeReservation-js">Book a table</button>
+                </ul>
+                
+            </div>
         </div>
     </div>
-    <div class="welcome">
+    <div class="welcome welcome-js">
         <img src="images/pexels-raphael-loquellano-13926721.jpg">
         <div class="order-buttons">
             <button class="order-now">Order Now</button>
             <button class="view-menu">View Menu</button>
         </div>
     </div>
-    <div class="about-section">
+    <div class="about-section about-section-js">
         <span class="subheading">About</span>
         <h2>Appetizer Restaurant</h2>
         <div class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veritatis assumenda optio omnis nulla deserunt eius? Suscipit voluptatem error ullam doloribus optio quos deserunt quas. Reiciendis natus ex omnis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus cupiditate ipsum, voluptatum nihil, iusto sed vitae eum iste odit quam! Sit ea, neque molestias expedita laudantium numquam officiis fuga!</div>
@@ -97,13 +109,13 @@
             </div>
         </div>
     </div>
-    <div class="menu-section">
+    <div class="menu-section menu-section-js">
         <span class="subheading">Specialities</span>
         <h2>Our Menu</h2>
         <div class="meal-type">
             <div class="breakfast-menu">
                 <h3>Breakfast</h3>
-                <div class="breakfast-item">
+                <div class="breakfast-item breakfast-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -115,7 +127,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="breakfast-item">
+                <div class="breakfast-item breakfast-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -127,7 +139,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="breakfast-item">
+                <div class="breakfast-item breakfast-item-js" >
                     <div>
                         <img src="images/breakfast3.jpg">
                     </div>
@@ -142,7 +154,7 @@
             </div>
             <div class="lunch-menu">
                 <h3>Lunch</h3>
-                <div class="lunch-item">
+                <div class="lunch-item lunch-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -154,7 +166,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="lunch-item">
+                <div class="lunch-item lunch-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -166,7 +178,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="lunch-item">
+                <div class="lunch-item lunch-item-js">
                     <div>
                         <img src="images/breakfast3.jpg">
                     </div>
@@ -181,7 +193,7 @@
             </div>
             <div class="dinner-menu">
                 <h3>Dinner</h3>
-                <div class="dinner-item">
+                <div class="dinner-item dinner-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -193,7 +205,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="dinner-item">
+                <div class="dinner-item dinner-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -205,7 +217,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="dinner-item">
+                <div class="dinner-item dinner-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -220,7 +232,7 @@
             </div>
             <div class="dessert-menu">
                 <h3>Dessert</h3>
-                <div class="dessert-item">
+                <div class="dessert-item dessert-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -232,7 +244,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="dessert-item">
+                <div class="dessert-item dessert-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -244,7 +256,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="dessert-item">
+                <div class="dessert-item dessert-item-js">
                     <div>
                         <img src="images/breakfast3.jpg">
                     </div>
@@ -259,7 +271,7 @@
             </div>
             <div class="wine-menu">
                 <h3>Wine Card</h3>
-                <div class="wine-item">
+                <div class="wine-item wine-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -271,7 +283,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="wine-item">
+                <div class="wine-item wine-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -283,7 +295,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="wine-item">
+                <div class="wine-item wine-item-js">
                     <div>
                         <img src="images/breakfast3.jpg">
                     </div>
@@ -298,7 +310,7 @@
             </div>
             <div class="drinks-menu">
                 <h3>Drinks</h3>
-                <div class="drinks-item">
+                <div class="drinks-item drinks-item-js">
                     <div>
                         <img src="images/breakfast1.jpg">
                     </div>
@@ -310,7 +322,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="drinks-item">
+                <div class="drinks-item drinks-item-js">
                     <div>
                         <img src="images/breakfast2.jpg">
                     </div>
@@ -322,7 +334,7 @@
                         <span>$29</span>
                     </div>
                 </div>
-                <div class="drinks-item">
+                <div class="drinks-item drinks-item-js">
                     <div>
                         <img src="images/breakfast3.jpg">
                     </div>
@@ -337,7 +349,7 @@
             </div>
         </div>
     </div>
-    <div class="reservation-section">
+    <div class="reservation-section reservation-js">
         <span class="subheading">Book a table</span>
         <h2>Make Reservation</h2>
         <div class="reservation-form">
@@ -491,7 +503,7 @@
         </div>
         <img src="images/breakfast-1804457_640.jpg" class="review-bg">
     </div>
-    <div class="instagram-section">
+    <div class="instagram-section instagram-js">
         <div class="ig-posts">
             <div class="post">
                 <img src="images/ig/food-1050813_1280.jpg" class="post">
@@ -560,21 +572,8 @@
             <input type="email" placeholder="Enter email address">
             <button class="subscribe-button">Subscribe</button>
         </div>
-        <div class="footer-social"> 
-            <h3>Instagram</h3>
-            <div class="footer-ig">
-                <img src="images/ig/food-1050813_1280.jpg">
-                <img src="images/ig/mulled-wine-4740440_1280.jpg">
-                <img src="images/ig/nougat-3078581_1280.jpg">
-                <img src="images/ig/platter-2009590_1280.jpg">
-                <img src="images/ig/restaurant-4011989_1280.jpg">
-                <img src="images/breakfast3.jpg">
-            </div>
-        </div>
     </div>
     <p class="copyright-text">Copyright ©2023 All rights reserved. </p>
-
-    <script src="js/home.js">
-    </script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>

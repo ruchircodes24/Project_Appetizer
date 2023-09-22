@@ -20,7 +20,7 @@ body{
 }
 
 .welcome img{
-    max-width: 100%;    
+    max-width: 100%;
 }
 
 .welcome button{
@@ -83,7 +83,7 @@ h2{
 }
 
 .about-content{
-    width: 100vw;
+    width: 100%;
     font-size: 1.1em;
     line-height: 30px;
     text-align: center;
@@ -254,6 +254,12 @@ h2{
     margin-top: -20px;
 }
 
+.view-cart{
+    display: flex;
+    gap: 10vw;
+    background-color: orange;
+}
+
 .reservation-form{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -303,7 +309,7 @@ h2{
     display: flex;
     column-gap: 20px;
     margin-bottom: 50px;
-    padding-left: 30px;
+    padding-left: 5vw;
 }
 
 .master-chefs img{
@@ -439,7 +445,7 @@ h2{
     background-color: rgb(26, 25, 25);
     color: rgb(184, 184, 184);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vw;
     height: 100%;
     padding: 1vw 1.5vw;
@@ -545,6 +551,32 @@ h2{
         width: 3vw;
     }
 
+    /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
     .menu-items{
         display: none;
     }
@@ -567,7 +599,7 @@ h2{
 
     .play-button{
         display: flex;
-        justify-content: center;
+        margin-left: 44vw;
         width: fit-content;
     }
 
