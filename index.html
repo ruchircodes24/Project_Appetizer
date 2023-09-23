@@ -13,7 +13,7 @@
 <body>
     <div class="navbar navbar-js">
         <div class="logo logo-js">Appetizer</div>
-        <div class="menu-items menuItems-js">
+        <div class="menu-items">
             <span class="home home-js">Home</span>
             <span class="about-js">About</span>
             <span class="menu-js">Menu</span>
@@ -21,20 +21,14 @@
             <button class="makeReservation-js">Book a table</button>
         </div>
         <div class="nav-menu">
-            <button type="button" class="collapsible">
-                <img src="images/more.png">
-            <span>MENU</span>
-            </button>
-            <div class="content">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                    <button class="makeReservation-js">Book a table</button>
-                </ul>
-                
+            <img src="images/more.png">
+            <span class="menu-button-js">MENU</span>
+            <div class="collapsible-content collapsible-content-js">
+                <span class="home home-js">Home</span>
+                <span class="about-js">About</span>
+                <span class="menu-js">Menu</span>
+                <span class="contact-js">Contact</span>
+                <button class="makeReservation-js">Book a table</button>
             </div>
         </div>
     </div>
@@ -575,5 +569,6 @@
     </div>
     <p class="copyright-text">Copyright ©2023 All rights reserved. </p>
     <script src="scripts/home.js"></script>
+    <script src="scripts/navbar.js"></script>
 </body>
 </html>

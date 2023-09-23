@@ -70,5 +70,37 @@ body{
     .menu-items{
         display: none;
     }
+
+    .nav-menu{
+        cursor: pointer;
+    }
+
+    .collapsible-content{
+        display: none;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: center;
+        width:82vw;
+        height: auto;
+        padding: 15vw 10vw;
+        margin-left: -27vw;
+        background-color: black !important;
+        font-weight: 500;
+    }
+
+    .active button{
+        padding:3vw 5vw;
+        margin-left: 5vw;
+        cursor: pointer;
+    }
+
+
+    .collapsible-content .active{
+        background-color: black;
+    }
 }
 

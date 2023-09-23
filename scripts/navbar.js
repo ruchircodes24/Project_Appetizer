@@ -1,14 +1,10 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+document.addEventListener('DOMContentLoaded', function(){
+  const collapsibleButton = document.querySelector('.menu-button-js');
+  const collapsibleContent = document.querySelector('.collapsible-content-js');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+  collapsibleButton.addEventListener('click', function(){
+    collapsibleContent.classList.toggle('active');
+    collapsibleButton.classList.toggle('active');
+    
+  })
+})
