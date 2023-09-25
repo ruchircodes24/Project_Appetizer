@@ -66,41 +66,36 @@ body{
         display: initial;
         color: #707070;
     }
-
+    .navbar .logo{
+        font-size: 1.5em;
+    }
     .menu-items{
         display: none;
     }
-
     .nav-menu{
         cursor: pointer;
     }
-
     .collapsible-content{
         display: none;
     }
-
     .active{
         display: flex;
         flex-direction: column;
         gap: 2vh;
         align-items: center;
-        width:82vw;
+        width:85vw;
         height: auto;
         padding: 15vw 10vw;
         margin-left: -27vw;
-        background-color: black !important;
+        margin-top: 2vh;
+        background-color: black;
         font-weight: 500;
+        transition: ease 1s;
     }
-
     .active button{
         padding:3vw 5vw;
         margin-left: 5vw;
         cursor: pointer;
-    }
-
-
-    .collapsible-content .active{
-        background-color: black;
     }
 }
 
