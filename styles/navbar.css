@@ -45,7 +45,6 @@
 }
 .nav-menu img{
     width: 20px;
-    
 }
 
 .home{
@@ -75,17 +74,23 @@ body{
     .nav-menu{
         cursor: pointer;
     }
+
+    .make-reservation-js:hover{
+        background-color: transparent;
+        border: 1.5px solid orange;
+        color: orange;
+    }
     .collapsible-content{
         display: none;
     }
     .active{
         display: flex;
         flex-direction: column;
-        gap: 2vh;
+        gap: 5vh;
         align-items: center;
         width:85vw;
         height: auto;
-        padding: 15vw 10vw;
+        padding: 13vw 10vw;
         margin-left: -27vw;
         margin-top: 2vh;
         background-color: black;

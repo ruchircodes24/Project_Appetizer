@@ -19,5 +19,69 @@ document.addEventListener('click', function(event){
   }
 })
 
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelector(".logo-js");
+
+  spanElement.addEventListener("click", function(){
+      const aboutSection = document.querySelector(".welcome-js");
+      aboutSection.scrollIntoView({behavior: "smooth"});
+  })
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelectorAll(".home-js");
+
+spanElement.forEach(function(spanElement){
+  spanElement.addEventListener('click', function(){
+      const homeSection = document.querySelector(".welcome-js");
+  homeSection.scrollIntoView({behavior: "smooth"});
+  })  
+})
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelectorAll(".about-js");
+
+  spanElement.forEach(function(spanElement){
+      spanElement.addEventListener('click', function(){
+          const aboutSection = document.querySelector(".about-section-js");
+      aboutSection.scrollIntoView({behavior: "smooth"});
+      })  
+  })
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelectorAll(".menu-js");
+
+spanElement.forEach(function(spanElement){
+  spanElement.addEventListener('click', function(){
+      const menuSection = document.querySelector(".menu-section-js");
+  menuSection.scrollIntoView({behavior: "smooth"});
+  })  
+})
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelectorAll(".contact-js");
+
+spanElement.forEach(function(spanElement){
+  spanElement.addEventListener('click', function(){
+      const instagramSection = document.querySelector(".instagram-js");
+  instagramSection.scrollIntoView({behavior: "smooth"});
+  })  
+})
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  const spanElement = document.querySelectorAll(".make-reservation-js");
+
+spanElement.forEach(function(spanElement){
+  spanElement.addEventListener('click', function(){
+      const reservationSection = document.querySelector(".reservation-js");
+  reservationSection.scrollIntoView({behavior: "smooth"});
+  })  
+})
+})
+
 
 
