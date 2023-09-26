@@ -254,10 +254,38 @@ h2{
     margin-top: -20px;
 }
 
-.view-cart{
-    display: flex;
-    gap: 10vw;
+.your-cart{
+    display: none;
+}
+
+.display-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60vw;
+    text-align: center;
+    align-items: center;
+    width: 93%;
+    margin: 1vw;
+    padding:1.5vw;
     background-color: orange;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 10px;
+    box-shadow: 4px 10px 10px grey;
+    position: fixed;
+    bottom: 10px;
+    transition: ease-in-out 1s;
+    z-index: 100;
+}
+
+.view-cart-btn, .order-total{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-items, .total-bill{
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 
 .reservation-form{

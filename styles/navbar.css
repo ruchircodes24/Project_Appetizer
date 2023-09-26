@@ -65,16 +65,15 @@ body{
         display: initial;
         color: #707070;
     }
+    .nav-menu{
+        cursor: pointer;
+    }
     .navbar .logo{
         font-size: 1.5em;
     }
     .menu-items{
         display: none;
     }
-    .nav-menu{
-        cursor: pointer;
-    }
-
     .make-reservation-js:hover{
         background-color: transparent;
         border: 1.5px solid orange;
